@@ -17,6 +17,12 @@ import java.util.ResourceBundle;
 
 import static java.lang.Integer.*;
 
+/**
+ * Simple javaFX tip calculator
+ * used to calculate tip percentage and amount from actual amount.
+ * Wills Ekanem 2020.
+ */
+
 public class Controller implements Initializable {
 
     @FXML
@@ -56,7 +62,7 @@ public class Controller implements Initializable {
                         Tip.setText(String.valueOf(tip));
                         double total = (tipPer/100)*amount + amount;
                         Total.setText(String.valueOf(total));
-                        System.out.println(total);
+                        // System.out.println(total); test
                     } catch (Exception e) {
                         //  System.out.println(e);
                     }
